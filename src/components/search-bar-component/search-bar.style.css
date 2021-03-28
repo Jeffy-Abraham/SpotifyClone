@@ -1,0 +1,19 @@
+.SearchBar input {
+  width: 300px;
+  height: 38px;
+  border-radius: 2px;
+  outline: none;
+  background-color: #383838;
+  color: hsla(0, 0%, 100%, 0.7);
+  border: none;
+  position: relative;
+  padding-left: 40px;
+  font-family: 'Montserrat'
+}
+.Search-Icon {
+  position: absolute;
+  padding: 10px;
+  z-index: 999;
+  margin-top: -2px;
+ 
+}

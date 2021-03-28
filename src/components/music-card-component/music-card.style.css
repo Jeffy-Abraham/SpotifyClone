@@ -1,0 +1,14 @@
+.music-card-container {
+  background-color: #282828;
+  box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
+  width: 220px;
+  min-width: 192px;
+  height: 220px;
+  margin-top: 50px;
+}
+.card-image {
+  background-color: yellow;
+  height: 100%;
+  
+
+}

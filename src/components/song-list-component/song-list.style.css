@@ -1,0 +1,32 @@
+table, tr, td {
+    border: none;
+}
+
+table{
+  
+    width: 100%;
+    border-collapse:collapse;
+    height: 100%;
+}
+.table-songs
+{
+  color: lightgray;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.table-songs-row:hover 
+{
+   background: #1DB954;
+   transition: background-color 300ms linear;
+   color: white;
+   
+
+}
+
+td{
+    border-radius: 2px;
+    padding: 4px;
+}

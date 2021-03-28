@@ -1,0 +1,45 @@
+.spotify-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  letter-spacing: 0.08rem;
+  background-color: #1db954;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  opacity: 0.9;
+  font-size: 11px;
+  text-shadow: #1db954;
+  margin: 30px;
+  border-style: none;
+  font-weight: 600;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.spotify-button:hover {
+  background-color: aliceblue;
+  border-style: solid;
+  border-color: #414345;
+  border-width: 1px;
+  color: #1db954;
+}
+.spotify-button-invert {
+  background-color: transparent;
+  border-style: solid;
+  border-color: #414345;
+  border-width: 1px;
+
+  color: whitesmoke;
+  width: 120px;
+  font-size: 11px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  letter-spacing: 0.08rem;
+}
+.spotify-button-invert:hover{
+  font-size: 13px;
+ 
+
+}
