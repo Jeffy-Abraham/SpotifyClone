@@ -5,6 +5,7 @@ import SongList from "../../components/song-list-component/song-list.component";
 import "./playList.page.css";
 import { connect } from "react-redux";
 import { getCurrentPlayList } from "../../redux/playlist/playlist-action";
+import PlayMusicButton from "../../components/play-music-button.component/play-music.component";
 
 class Playlist extends React.Component {
  
@@ -40,7 +41,12 @@ class Playlist extends React.Component {
               {PlayList_created_by}
             </small>
           </div>
+          {/*here goes the music component*/}
         </div>
+        {/*no songs then don't display the button*/}
+      
+        <hr style={{width:'90%',margin:'auto'}}></hr>
+
         <div className="play-song-list">
           <h2 style={{ color: "white" }}>
             Let's find something for your playlist

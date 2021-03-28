@@ -1,0 +1,23 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-left: 22px solid white;
+  border-bottom: 11px solid transparent;
+}
+
+.music-button-wrapper {
+  width: fit-content;
+  height: fit-content;
+  background-color: #1db954;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 100px;
+  opacity: 0.8;
+  position: absolute;
+}
+.music-button-wrapper:hover {
+  padding: 21px;
+  z-index: 999;
+  transition: padding 1000ms ease-in;
+}

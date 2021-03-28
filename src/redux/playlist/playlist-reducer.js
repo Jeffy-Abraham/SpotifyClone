@@ -19,7 +19,7 @@ const INITIAL_STATE = {
             return{
                 ...state,currentPlayList:getPlayListDetail(action.payload,state.playLists)
             }   
-
+      
     
   
       default:
