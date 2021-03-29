@@ -8,7 +8,7 @@ const Preview = ({ songName, songId, artist, genre, image }) => {
         <div>
           <img src={image} width="43px" style={{borderRadius:'2px'}}alt='album' />
         </div>
-
+          
         <div className='song-desc-container'>
           <div className="song-Title">{songName}</div>
           <div className="song-Artist">{artist}</div>

@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 
 const SearchBar = ({filterSong }) => {
   const [searchData, setData] = useState({
-    data: " artist or song",
+    data: " ",
   });
 
   const handleChange = (e) => {

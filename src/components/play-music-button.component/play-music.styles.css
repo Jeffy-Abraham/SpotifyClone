@@ -19,5 +19,24 @@
 .music-button-wrapper:hover {
   padding: 21px;
   z-index: 999;
-  transition: padding 1000ms ease-in;
+}
+.small-triangle {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 14px solid black;
+  border-bottom: 7px solid transparent;
+}
+.small-music-button-wrapper {
+  background-color: white;
+  box-shadow: 0px 8px 15px rgba(34, 27, 27, 0.5);
+  padding: 12px;
+  border-radius: 40px;
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+}
+
+.small-music-button-wrapper:hover {
+  padding: 13px;
 }

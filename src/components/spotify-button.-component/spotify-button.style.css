@@ -27,6 +27,7 @@
   border-style: solid;
   border-color: #414345;
   border-width: 1px;
+  height: 20px;
 
   color: whitesmoke;
   width: 120px;
@@ -39,7 +40,9 @@
   letter-spacing: 0.08rem;
 }
 .spotify-button-invert:hover{
-  font-size: 13px;
+  background-color: ivory;
+  color: #1db954;
+  border: none;
  
 
 }

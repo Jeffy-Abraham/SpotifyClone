@@ -3,10 +3,14 @@ import { connect } from "react-redux";
 import Preview from "../song-preview.component.jsx/song-preview.component";
 import CustomButton from "../spotify-button.-component/spotify-button.component";
 import "./song-list.style.css";
-const SongList = ({ SongsList }) => {
+import {addSongtoPlaylist}from '../../redux/playlist/playlist-action'
+import { filterChosenSong } from "../../redux/songs/song-action";
+const SongList = ({ SongsList,addSongtoPlaylist,filterChosenSong }) => {
+ 
   return (
-    <div>
-      <table border='0' className='table-songs'>
+    <div className='table-container' style={{position:'absolute',width:'80%'}}>
+      <table  border='0' className='table-songs' >
+      
         {SongsList.map((songs) => {
           return (
             
@@ -18,7 +22,7 @@ const SongList = ({ SongsList }) => {
               <td style={{fontSize:'12px'}}>
                {songs.year}
               </td>
-              <td><CustomButton text='ADD' type='inverse'/></td>
+              <td><div><button  className='spotify-button-invert' onClick={(e)=>{addSongtoPlaylist(songs);filterChosenSong(songs.songId)}}>ADD</button></div></td>
             </tr>
           );
         })}
@@ -29,5 +33,10 @@ const SongList = ({ SongsList }) => {
 const mapStateToProps = ({ songs: {filteredSongData} }) => ({
   SongsList: filteredSongData,
 });
+const mapDispatchToProps = (dispatch) => ({
+  addSongtoPlaylist: (songData) => dispatch(addSongtoPlaylist(songData)),
+  filterChosenSong:(id)=>dispatch(filterChosenSong(id))
+});
 
-export default connect(mapStateToProps, null)(SongList);
+
+export default connect(mapStateToProps, mapDispatchToProps)(SongList);
