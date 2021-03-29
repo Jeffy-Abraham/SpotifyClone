@@ -5,13 +5,7 @@ const INITIAL_STATE = {
   playList: [
    
   ],
-  currentlyPlayingSong:{
-    songId:0
-
-
-
-
-  }
+  currentlyPlayingSong:false
 };
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
