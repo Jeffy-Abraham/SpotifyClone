@@ -1,0 +1,25 @@
+.audio-container {
+  background: #181818;
+  bottom: 0;
+  z-index: 999;
+  width: 100vw;
+  position: fixed;
+  height: 100px;
+  border-color: rgb(58, 58, 58);
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: 5px 2px 20px black;
+  border-width: 1px;
+  color: black;
+}
+
+.audio-flex {
+  background-color: #181818;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin: auto;
+}

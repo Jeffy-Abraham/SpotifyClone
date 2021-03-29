@@ -25,7 +25,7 @@ const playListReducer = (state = INITIAL_STATE, action) => {
         ...state,
         currentPlayList: pushSongtoarray(state.currentPlayList, action.payload),
       };
-
+    
     default:
       return state;
   }

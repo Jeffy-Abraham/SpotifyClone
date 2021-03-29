@@ -16,11 +16,11 @@ table{
 }
 .table-songs
 {
-  color: lightgray;
+  color: rgb(187, 187, 185);
   font-size: 14px;
   font-family: 'Montserrat';
   margin-top: 20px;
-  padding: 20px;
+  padding: 2px;
 }
 
 .table-songs-row:hover 

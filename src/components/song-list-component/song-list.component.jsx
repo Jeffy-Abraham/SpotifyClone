@@ -6,13 +6,16 @@ import "./song-list.style.css";
 import {addSongtoPlaylist}from '../../redux/playlist/playlist-action'
 import { filterChosenSong } from "../../redux/songs/song-action";
 const SongList = ({ SongsList,addSongtoPlaylist,filterChosenSong }) => {
- 
+  
   return (
+    
     <div className='table-container' style={{position:'absolute',width:'80%'}}>
       <table  border='0' className='table-songs' >
       
         {SongsList.map((songs) => {
+        
           return (
+            
             
             <tr className='table-songs-row' key={songs.songId}>
               <td>

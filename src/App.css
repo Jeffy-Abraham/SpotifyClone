@@ -1,17 +1,4 @@
-
-.flex-main-container
-{
+.flex-main-container {
   display: flex;
   background: black;
-
-}
-.audio-container
-{
-  background: tomato;
-  bottom: 1px;
-  z-index: 999;
-  position: absolute;
-  width: 100vw;
-  height: 90px;
-  position: fixed;
 }

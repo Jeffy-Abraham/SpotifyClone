@@ -6,3 +6,9 @@
     letter-spacing:0.1 ;
 
 }
+.background-selection-hover:hover
+{
+    background-color: black;
+    padding: 10px;
+    opacity: 0.6;
+}

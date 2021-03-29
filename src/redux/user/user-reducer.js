@@ -5,6 +5,13 @@ const INITIAL_STATE = {
   playList: [
    
   ],
+  currentlyPlayingSong:{
+    songId:0
+
+
+
+
+  }
 };
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
@@ -13,8 +20,12 @@ const userReducer = (state = INITIAL_STATE, action) => {
         return{
             ...state,playList:[...state.playList,action.payload]
 
-        }
 
+        }
+    case "PLAY_SONG":
+      return{
+        ...state,currentlyPlayingSong:action.payload
+      }
      
 
     default:

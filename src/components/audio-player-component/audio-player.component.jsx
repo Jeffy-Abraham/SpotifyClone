@@ -1,15 +1,20 @@
-import Preview from "../song-preview.component.jsx/song-preview.component";
-import Like from "../like-component/like.component";
-import PlayMusicButton from "../play-music-button.component/play-music.component";
-const AudioPlayer = () => {
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import './audio-player.style.component.css'
+
+
+const AudioPlayers = ({music}) => {
   return (
-    <div className="audio-player-container">
-       
-        <h1 style={{color:'wheat'}}>AUDIO</h1>
-        <Like LikeStatus={true}/>
-        <PlayMusicButton size='small'/>
-    </div>
+    
+    <AudioPlayer style={{backgroundColor:'#181818',width:'500px'}}
+      autoPlay layout='reverse'
+
+      src={music}
+      onPlay={(e) => console.log("onPlay")}
+      // other props here
+    />
+   
   );
 };
 
-export default AudioPlayer;
+export default AudioPlayers;
