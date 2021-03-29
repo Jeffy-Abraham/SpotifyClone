@@ -6,8 +6,8 @@ import Clock from "../../assests/clock.png";
 import Like from "../like-component/like.component";
 import { playtheDamnSong } from "../../redux/user/user-action";
 import NowPlaying from "../now-playing-component/now-playing.component";
-const PlayListSongs = ({ Songs, playtheDamnSong, songId }) => {
-  console.log(songId);
+const PlayListSongs = ({ Songs, playtheDamnSong, songId,isPlaying,isPause}) => {
+  
   return (
     <div>
       {Songs.length !== 0 ? (
@@ -28,10 +28,14 @@ const PlayListSongs = ({ Songs, playtheDamnSong, songId }) => {
           </tr>
           {Songs.map((songs, index) => {
             return (
-              <tr key={songs.songId} onClick={(e) => playtheDamnSong(songs)} className='background-selection-hover'>
+              <tr
+                key={songs.songId}
+                onClick={(e) => playtheDamnSong(songs)}
+                className="background-selection-hover"
+              >
                 {songs.songId === songId ? (
                   <td>
-                    <NowPlaying />
+                    <NowPlaying play={isPlaying} pause={isPause} />
                   </td>
                 ) : (
                   <td
@@ -70,11 +74,13 @@ const mapStateToProps = ({
     currentPlayList: { Songs },
   },
   user: {
-    currentlyPlayingSong: { songId },
+    currentlyPlayingSong: { songId,isPlaying,isPause },
   },
 }) => ({
   Songs,
   songId,
+  isPlaying,
+  isPause
 });
 
 const mapDispatchToProps = (dispatch) => ({

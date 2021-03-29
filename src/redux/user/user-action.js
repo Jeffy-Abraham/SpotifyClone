@@ -11,3 +11,13 @@ export const addPlaylistToUser = (data) => ({
 
 
   }) 
+  export const juststopTheSong=()=>
+  ({
+        type:"PAUSE_SONG",
+        
+
+  })
+  export const resumeTheSong=()=>
+  ({
+    type:"RESUME_SONG"
+  })

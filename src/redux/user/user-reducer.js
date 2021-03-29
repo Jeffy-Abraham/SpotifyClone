@@ -1,3 +1,5 @@
+import setStatus from "./user-utility";
+
 const INITIAL_STATE = {
   isFetching: false,
   userName: "Jeffy Abraham",
@@ -18,8 +20,25 @@ const userReducer = (state = INITIAL_STATE, action) => {
         }
     case "PLAY_SONG":
       return{
-        ...state,currentlyPlayingSong:action.payload
+        ...state,currentlyPlayingSong:setStatus(action.payload)
       }
+    case "PAUSE_SONG":
+      var temp=state.currentlyPlayingSong
+     
+      temp['isPlaying']=false
+      return{
+        ...state,currentlyPlayingSong:temp
+
+      }
+    case   "RESUME_SONG":
+      var temp=state.currentlyPlayingSong
+     
+      temp['isPlaying']=true
+      return{
+        ...state,currentlyPlayingSong:temp
+
+      }
+
      
 
     default:

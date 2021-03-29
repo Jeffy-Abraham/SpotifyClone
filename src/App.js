@@ -13,7 +13,7 @@ function App({ currentlyPlayingSong }) {
         <div>
           <NavPanel />
         </div>
-        <div style={{ width: "80%", marginLeft: "200px" }}>
+        <div style={{ width: "100%", marginLeft: "220px" }}>
           <Switch>
             <Route exact path="/" />
             <Route exact path="/Search" />

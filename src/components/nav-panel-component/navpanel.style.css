@@ -4,11 +4,12 @@
 
   padding: 18px;
 
-  width: 230px; /* or whatever width you want. */
-  max-width: 200px; /* or whatever width you want. */
+  width: 280px; /* or whatever width you want. */
+  max-width: 210px; /* or whatever width you want. */
   display: inline-block;
   height: 100%;
   position: fixed;
+  z-index: 999;
 }
 
 nav {
