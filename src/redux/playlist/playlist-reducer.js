@@ -2,7 +2,9 @@ import { getPlayListDetail, pushSongtoarray } from "./playlist-utility";
 
 const INITIAL_STATE = {
   playLists: [],
-  currentPlayList: {},
+  currentPlayList: {
+
+  },
 };
 const playListReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {

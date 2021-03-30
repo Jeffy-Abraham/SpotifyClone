@@ -20,30 +20,14 @@ function NavPanel({ userName, playList }) {
       routeTitle: "Home",
       icon: HomeIcon,
     },
-    {
-      id: 2,
-      route: "/Search",
-      routeTitle: "Search",
-      icon: SearchIcon,
-    },
-    {
-      id: 3,
-      route: "/Library",
-      routeTitle: "Your Library",
-      icon: LibraryIcon,
-    },
+   
     {
       id: 4,
       route: "/CreatePlaylist",
       routeTitle: "Create Playlist",
       icon: AddIcon,
     },
-    {
-      id: 5,
-      route: "/LikedSongs",
-      routeTitle: "Liked Songs",
-      icon: HeartIcon,
-    },
+   
   ];
   var currentRoute = useLocation().pathname;
 

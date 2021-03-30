@@ -13,7 +13,7 @@ const SongList = ({ SongsList,addSongtoPlaylist,filterChosenSong }) => {
       <table  border='0' className='table-songs' >
       
         {SongsList.map((songs) => {
-        
+          {console.log(songs)}
           return (
             
             

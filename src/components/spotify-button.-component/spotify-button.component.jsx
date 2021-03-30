@@ -6,7 +6,7 @@ const CustomButton = ({type,text,handleSubmits,id}) => {
       
     <div className="spotify-button-container">
         
-      <button id={id} onClick={(e)=>handleSubmits(e)} className={'spotify-button'+(type?'-invert':'')}>{text}</button>
+      <button  id={id} onClick={(e)=>handleSubmits(e)} className={'spotify-button'+(type?'-invert':'')}>{text}</button>
     </div>
   );
 };
