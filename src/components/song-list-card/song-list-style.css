@@ -1,0 +1,16 @@
+.song-card-container {
+  display: flex;
+  width: 280px;
+  border-radius: 7px;
+  height: 80px;
+background-color: rgb(24, 24, 23);
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.song-card-container:hover {
+  background-color: #1db954;
+}

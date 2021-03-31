@@ -7,6 +7,7 @@ const INITIAL_STATE = {
 };
 const songReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    
     case "FILTER_SONGS":
       return { ...state, filteredSongData:filterbyName(action.payload,state.songsData) };
 

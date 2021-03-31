@@ -31,7 +31,7 @@ const userReducer = (state = INITIAL_STATE, action) => {
 
       }
     case   "RESUME_SONG":
-      var temp=state.currentlyPlayingSong
+       temp=state.currentlyPlayingSong
      
       temp['isPlaying']=true
       return{

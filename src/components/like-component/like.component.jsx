@@ -4,7 +4,7 @@ import Likey from '../../assests/like.png'
 const Like=({LikeStatus})=>
 {
 return(
-    <img src={LikeStatus?ActiveLike:Likey} width="18px" />
+    <img src={LikeStatus?ActiveLike:Likey} width="18px" alt='' />
 )
 
 }

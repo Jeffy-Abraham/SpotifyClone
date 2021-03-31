@@ -1,11 +1,14 @@
-import React from "react";
+import {React,useEffect} from "react";
 import { connect } from "react-redux";
 import Preview from "../song-preview.component.jsx/song-preview.component";
-import CustomButton from "../spotify-button.-component/spotify-button.component";
 import "./song-list.style.css";
 import {addSongtoPlaylist}from '../../redux/playlist/playlist-action'
-import { filterChosenSong } from "../../redux/songs/song-action";
-const SongList = ({ SongsList,addSongtoPlaylist,filterChosenSong }) => {
+import { filterChosenSong} from "../../redux/songs/song-action";
+const SongList = ({ SongsList,addSongtoPlaylist,filterChosenSong,makeApiReq }) => {
+  useEffect(() => {
+    
+    
+  });
   
   return (
     
@@ -13,7 +16,6 @@ const SongList = ({ SongsList,addSongtoPlaylist,filterChosenSong }) => {
       <table  border='0' className='table-songs' >
       
         {SongsList.map((songs) => {
-          {console.log(songs)}
           return (
             
             
@@ -38,7 +40,8 @@ const mapStateToProps = ({ songs: {filteredSongData} }) => ({
 });
 const mapDispatchToProps = (dispatch) => ({
   addSongtoPlaylist: (songData) => dispatch(addSongtoPlaylist(songData)),
-  filterChosenSong:(id)=>dispatch(filterChosenSong(id))
+  filterChosenSong:(id)=>dispatch(filterChosenSong(id)),
+  
 });
 
 

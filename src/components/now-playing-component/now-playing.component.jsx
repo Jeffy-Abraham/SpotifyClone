@@ -8,7 +8,7 @@ const NowPlaying = ({ play, pause }) => {
       {play ? (
         <Loader color="#1DB954" height={23} width={23} />
       ) : (
-        <img src={Pause} height='23px' width='23px'/>
+        <img src={Pause} height='23px' width='23px' alt='s'/>
       )}
     </div>
   );

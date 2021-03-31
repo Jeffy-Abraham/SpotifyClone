@@ -5,6 +5,7 @@ import Playlist from "./pages/playlist-page/playlist.page";
 import CreatePlaylist from "./pages/create-playlist/createPlaylist.page";
 import { connect } from "react-redux";
 import MusicFooter from "./components/music-footer-component/music-footer.component";
+import HomePage from "./pages/home-page/home.page";
 
 function App({ currentlyPlayingSong }) {
   return (
@@ -15,7 +16,7 @@ function App({ currentlyPlayingSong }) {
         </div>
         <div style={{ width: "100%", marginLeft: "220px" }}>
           <Switch>
-            <Route exact path="/" />
+            <Route exact path="/" component={HomePage} />
             <Route exact path="/Search" />
             <Route exact path="/Library" />
             <Route exact path="/CreatePlaylist" component={CreatePlaylist} />

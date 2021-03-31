@@ -29,7 +29,7 @@ const PlayListSongs = ({
             <td>GENERE</td>
             <td>DATE ADDED</td>
             <td>
-              <img src={Clock} width="22px" />
+              <img src={Clock} width="22px" alt='' />
             </td>
           </tr>
           {Songs.map((songs, index) => {

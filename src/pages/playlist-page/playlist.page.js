@@ -5,9 +5,9 @@ import SongList from "../../components/song-list-component/song-list.component";
 import "./playList.page.css";
 import { connect } from "react-redux";
 import { getCurrentPlayList } from "../../redux/playlist/playlist-action";
-import PlayMusicButton from "../../components/play-music-button.component/play-music.component";
+
 import PlayListSongs from "../../components/added-songs-component/added-songs.component";
-import addedSongsComponent from "../../components/added-songs-component/added-songs.component";
+
 
 class Playlist extends React.Component {
   componentDidMount() {}
